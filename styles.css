@@ -1,0 +1,64 @@
+
+:root{
+/*Colour palette*/ 
+
+--vanilla: rgba(241, 232, 184, 1);
+--flax: rgba(249, 231, 132, 1);
+--flaxBC: rgba(249, 231, 132, 0.75);
+--atomic-tangerine: rgba(229, 143, 101, 1);
+--indian-red: rgba(208, 83, 83, 1);
+--eerie-black: rgba(25, 25, 25, 1);
+--emerald: rgba(126, 188, 137, 1);
+--emeraldBC: rgba(126, 188, 137, 0.5);
+--dark-purple: rgba(59, 28, 50, 1);
+--baby-powder: rgba(251, 254, 251, 1);
+
+/*Global variables*/
+  font-family: Verdana, Geneva, sans-serif;
+  color: var(--baby-powder);
+}
+
+/*Centering the site */
+.title {
+    width: 15%; /* Could be anything, but 75% works here. */
+    margin: auto; /* This is what center the content div itself. */
+ }
+/*Centering the title */
+.content {
+    width: 50%; /* Could be anything, but 75% works here. */
+    margin: auto; /* This is what center the content div itself. */
+ }
+
+body{
+  background-color:var(--eerie-black);
+}
+
+h1{ 
+  
+  letter-spacing: -1.2px;
+  word-spacing: 0.4px;
+  
+  font-weight: 4000;
+  text-decoration: none;
+  color:var(--baby-powder);
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+  border-left: 3px solid var(--emerald); 
+  background: var(--emeraldBC);
+  width: fit-content;
+  padding: 4px;
+  
+}
+
+h2{
+  text-decoration: underline solid var(--emeraldBC);
+  padding: 4px;
+
+}
+.about{
+  border-left: 3px solid var(--emeraldBC); 
+  padding: 4px;
+}
