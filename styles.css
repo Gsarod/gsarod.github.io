@@ -4,33 +4,41 @@
 
 --vanilla: rgba(241, 232, 184, 1);
 --flax: rgba(249, 231, 132, 1);
---flaxBC: rgba(249, 231, 132, 0.75);
+--flaxBC: rgba(249, 231, 132, 0.5);
+--flaxNeon: rgb(255, 234, 131);
 --atomic-tangerine: rgba(229, 143, 101, 1);
 --indian-red: rgba(208, 83, 83, 1);
 --eerie-black: rgba(25, 25, 25, 1);
---emerald: rgba(126, 188, 137, 1);
---emeraldBC: rgba(126, 188, 137, 0.5);
 --dark-purple: rgba(59, 28, 50, 1);
 --baby-powder: rgba(251, 254, 251, 1);
+--yale-blue: rgba(8, 61, 119, 1);
+--yale-blueBC: rgba(8, 61, 119, 0.5);
+--yale-blueNeon: rgb(18, 98, 185);
 
-/*Global variables*/
-  font-family: Verdana, Geneva, sans-serif;
-  color: var(--baby-powder);
+--button-active: rgb(43, 41, 41); 
+
+--text: rgba(135, 140, 143);
 }
+
 
 /*Centering the site */
 .title {
-    width: 15%; /* Could be anything, but 75% works here. */
+    width: 20%; /* Could be anything, but 75% works here. */
     margin: auto; /* This is what center the content div itself. */
  }
-/*Centering the title */
+
+ /*Centering the title */
 .content {
     width: 50%; /* Could be anything, but 75% works here. */
     margin: auto; /* This is what center the content div itself. */
  }
 
+
 body{
-  background-color:var(--eerie-black);
+  background-color:var(--eerie-black);  
+  font-family: Verdana, Geneva, sans-serif;
+  color: var(--text);
+  font-weight: 4000;
 }
 
 h1{ 
@@ -38,27 +46,71 @@ h1{
   letter-spacing: -1.2px;
   word-spacing: 0.4px;
   
-  font-weight: 4000;
+ 
   text-decoration: none;
-  color:var(--baby-powder);
   font-size: 40px;
   font-style: normal;
   font-variant: normal;
   text-transform: none;
   text-align: center;
-  border-left: 3px solid var(--emerald); 
-  background: var(--emeraldBC);
+  border: 5px solid var(--yale-blue); 
+  background: var(--yale-blueBC);
   width: fit-content;
   padding: 4px;
   
 }
 
 h2{
-  text-decoration: underline solid var(--emeraldBC);
+  text-decoration: underline solid var(--yale-blueBC);
   padding: 4px;
 
 }
+
 .about{
-  border-left: 3px solid var(--emeraldBC); 
+  border-left: 3px solid var(--yale-blueBC); 
   padding: 4px;
+}
+
+
+/*Buttons*/
+.btn {
+  background-color: var(--yale-blueBC);
+  padding: 12px 16px; 
+  font-size: 30px; 
+  cursor: pointer; 
+  border-radius: 12%;
+  width: fit-content;
+  box-shadow: 0 9px var(--button-active);
+  border: 3px solid var(--yale-blueNeon);
+}
+.btn:hover{
+  background-color: var(--yale-blue);
+}
+.btn:active{
+  background-color: var(--yale-blue);
+  box-shadow: 0 5px var(--button-active);
+  transform: translateY(5px);
+
+}
+
+.prjbtn {
+  background-color: var(--yale-blueBC);
+  padding: 40px 30px; 
+  font-size: 30px; 
+  cursor: pointer; 
+  border-radius: 12%;
+  width: fit-content;
+  box-shadow: 0 9px var(--button-active);
+  border: 3px solid var(--yale-blueNeon);
+  font-family: Verdana, Geneva, sans-serif;
+  
+  
+}
+.prjbtn:hover{
+  background-color: var(--yale-blue);
+}
+.prjbtn:active{
+  background-color: var(--yale-blue);
+  box-shadow: 0 5px var(--button-active);
+  transform: translateY(5px);
 }
