@@ -7,38 +7,59 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon"type="image/svg" href="AddressBook.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-  
+
+  <!--Title-->
   <div class="title">
     <h1>Gsarod  portfolio</h1>
   </div>
   <div class="content"> 
     
-    
-    <a href="pages/AboutMe.html">
-      <button class="btn"><i class="fa fa-user"></i><br></button>
-    </a>
-    <a href="pages/projects.html">
-      <button class="btn"><i class="fa fa-gear"></i><br></button>
-    </a>
+    <!--Navigating buttons-->
+  
+    <p class="container">
+      <a href="pages/AboutMe.html">
+        <btn data-title="About Me" data-tag="Info" data-info="Description and short recap of my studies">
+          <span class="icon"><i class="fa fa-user"></i></span>
+        </btn>
+      </a>
 
+      <a href="pages/Projects.html">
+        <btn data-title="Projects" data-tag="Info" data-info="My projects documentations.">
+          <span class="icon"><i class="fa fa-gear"></i></span>
+        </btn>
+      </a>
+    </p>
+  </div>
 
-
-    <h2>Socials</h2>
-    <p>
+  <!--Social buttons-->
+  <div class="BL-anchor"> <!--Anchors the buttons to the bottom left corner-->
+    <p class="container">
       <a href="https://www.linkedin.com/in/gabriel-ungurasu-a05600291" >
-        <button class="btn"><i class="fa fa-linkedin"></i></button>
+        <button class="SclBtn">
+          <i class="fa fa-linkedin"></i></button>
       </a>
       <a href="https://www.github.com/Gsarod">
-        <button class="btn">
+        <button class="SclBtn">
           <i class="fa fa-github"></i>
         </button>
       </a>
     </p>
-
-  
   </div>
+
+
+<!--Buttons info-->
+
+<div class="btnInfo"> <!--Anchors the info to the bottom right corner-->
+  <div style="display: grid; grid-template-columns: auto auto; grid-gap: 0;">
+    <h3 class="infoTag" id="infoTag" style="margin: 0; ;"></h3>
+    <h3 class="infoTitle" id="infoTitle" style="margin: 0;"></h3>
+  </div>
+  <p class="infoBlock" id="infoBlock" style="margin: 0;"></p>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
 

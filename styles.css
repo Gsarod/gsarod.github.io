@@ -31,15 +31,16 @@
 .content {
     width: 50%; 
     margin: auto; 
+    
  }
 
-
+/*Modifying the default tags*/
 body{
   background-color:var(--eerie-black);  
   font-family: Verdana, Geneva, sans-serif;
   color: var(--vanilla);
   font-weight: 4000;
-  
+
 }
 
 h1{ 
@@ -72,26 +73,144 @@ h2{
   padding: 4px;
 }
 
+a {
+    text-decoration: none;
+}
+
+/*CUSTOM BUTTONS*/
 
 /*Buttons*/
-.btn {
+
+button:hover{
+  background-color: var(--yale-blue);
+
+}
+button:active{
+  background-color: var(--yale-blue);
+  box-shadow: 0 5px var(--button-active);
+  transform: translateY(5px);  
+}
+
+
+
+/*Socials Buttons*/
+.SclBtn {
+  
+  position: relative;
   background-color: var(--yale-blueBC);
   padding: 12px 16px; 
   font-size: 30px; 
   cursor: pointer; 
-  border-radius: 12%;
+  border-radius: 10%;
   width: fit-content;
   box-shadow: 0 9px var(--button-active);
   border: 3px solid var(--yale-blueNeon);
   color: var(--vanilla);
 }
-.btn:hover{
+.SclBtn:hover{
   background-color: var(--yale-blue);
 
 }
-.btn:active{
+.SclBtn:active{
   background-color: var(--yale-blue);
   box-shadow: 0 5px var(--button-active);
   transform: translateY(5px);
   
+}
+
+
+/*Dynamic buttons*/
+
+btn {
+  
+  display: flex;
+
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+  background-color: var(--yale-blueBC);
+  padding: 12px 16px; 
+  font-size: 24px; 
+  cursor: pointer; 
+  border-radius: 12%;
+  box-shadow: 0 9px var(--button-active);
+  border: 3px solid var(--yale-blueNeon);
+  color: var(--vanilla);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+.icon{
+  
+  position: relative;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  color: var(--vanilla);
+
+}
+
+btn:hover .icon{
+  transform: translateY(15px);
+  opacity: 0;
+}
+.BL-anchor{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+/* Info Block Styling */
+.infoTitle {
+
+  
+  padding: 10px 20px;
+  border: 2px inset var(--yale-blueBC);
+  width: fit-content;
+  background: var(--yale-blueBC);
+  border: solid var(--yale-blueNeon);
+  border-radius: 5px;
+  display: none; /* Hidden by default */
+  
+
+}
+.infoTag {
+
+  
+  padding: 10px 20px;
+  border: 2px inset var(--yale-blueBC);
+  width: fit-content;
+  background: var(--yale-blueBC);
+  border: solid var(--yale-blueNeon);
+  border-radius: 5px;
+  display: none; /* Hidden by default */
+  
+
+}
+.infoBlock {
+
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none; /* Hidden by default */
+  background: var(--yale-blueBC);
+  border: solid var(--yale-blueNeon);
+  
+ 
+}
+
+.btnInfo{
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  justify-items: right;
+}
+
+.container {
+  display: flex;
+  flex-direction: row; /* Stacks items vertically */
+
 }

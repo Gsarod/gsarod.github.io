@@ -11,25 +11,32 @@
 <body>
   
   <div class="title">
-    <h1>About Me</h1>
+    <h1>Projects</h1>
   </div>
-  <div class="content"> <!--Serious yapping-->
-      <h2>Self-taught junior programmer</h2> 
-
-        <p class="about">Working on projects when I have some free time. Applying for a BTS CIEL at Ynov Campus Bordeaux.<br>
-        I like to do small projects that serve me a purpose currently working on a cli calendar app. 
-        </p>
-
+  <div class="content"> 
+ 
     <!--Navigating buttons-->
+    
+    <p class="container">
+      
+      <a href="projects/rong.html">
+        <btn data-title="Rong" data-tag="Game" data-info="What if pong was a rouge-like ? ">
+          <span class="icon"><i class="fa fa-gamepad"></i><br></span>
+        </btn>
+      </a>
+    </p>
+
+
     <a href="../index.html">
       <btn data-title="Mainpage" data-tag="Navigation" data-info="Go back to the homepage">
         <span class="icon"><i class="fa fa-home"></i></span>
-      </button>
+      </btn>
     </a>
-  
   </div>
-      
+
 <!--Buttons info-->
+
+
 <div class="btnInfo"> <!--Anchors the info to the bottom right corner-->
   <div style="display: grid; grid-template-columns: auto auto; grid-gap: 0;">
     <h3 class="infoTag" id="infoTag" style="margin: 0; ;"></h3>
@@ -39,7 +46,6 @@
 </div>
 <script src="../script.js"></script>
 
-</div>
 </body>
 </html>
 
