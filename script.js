@@ -17,12 +17,5 @@ document.addEventListener("DOMContentLoaded", function () {
             infoTag.style.display = 'block';
             infoBlock.style.display = 'block';
         });
-
-            //Closes the description
-        button.addEventListener('mouseleave', () => {
-            infoBlock.style.display = 'none';
-            infoTitle.style.display = 'none';
-            infoTag.style.display = 'none';
-        });
     });
 });

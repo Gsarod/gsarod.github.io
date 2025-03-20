@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="../styles.css">
   <link rel="icon"type="image/svg" href="AddressBook.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../script.js"></script>
 </head>
 <body>
-  
+
   <div class="title">
     <h1>Projects</h1>
   </div>
@@ -28,23 +29,25 @@
 
 
     <a href="../index.html">
-      <btn data-title="Mainpage" data-tag="Navigation" data-info="Go back to the homepage">
+      <StBtn>
         <span class="icon"><i class="fa fa-home"></i></span>
-      </btn>
+      </StBtn>
     </a>
+  <!--Buttons info-->
+    <div>
+      <div style="display: grid; grid-template-columns: auto auto; grid-gap: 0;">
+        <h3 class="infoTag" id="infoTag" style="margin: 0; ;"></h3>
+        <h3 class="infoTitle" id="infoTitle" style="margin: 0;"></h3>
+      </div>
+      <p class="infoBlock" id="infoBlock" style="margin: 0;"></p>
+    </div>
+
+  
   </div>
 
-<!--Buttons info-->
 
 
-<div class="btnInfo"> <!--Anchors the info to the bottom right corner-->
-  <div style="display: grid; grid-template-columns: auto auto; grid-gap: 0;">
-    <h3 class="infoTag" id="infoTag" style="margin: 0; ;"></h3>
-    <h3 class="infoTitle" id="infoTitle" style="margin: 0;"></h3>
-  </div>
-  <p class="infoBlock" id="infoBlock" style="margin: 0;"></p>
-</div>
-<script src="../script.js"></script>
+
 
 </body>
 </html>
