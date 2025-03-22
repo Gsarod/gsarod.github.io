@@ -313,8 +313,9 @@ taskbar {
 .asciiart {
   position: fixed;
   top: 35%;
-  left: 35%;
-  z-index: 100;
+  left: 5%;
+  z-index: -1;
+  
   
 }
 /*
