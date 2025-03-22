@@ -29,30 +29,17 @@
 --white: rgba(255, 255, 255, 1);
 
 font-family: 'Trebuchet MS', sans-serif;
+background: url(/lib/img/Wallpapers/win95\ wallpaper.jpg);
 }
 
 
-/*Centering the site */
-.title {
-    width: 50%; 
-    margin: auto; 
-
- }    
-
- /*Centering the title */
-.content {
-    width: 50%; 
-    margin: auto; 
-    
- }
 
 /*Modifying the default tags*/
 body{
-  background-color:var(--eerie-black);  
+
 
   color: var(--vanilla);
   font-weight: 4000;
-
 }
 
 h1{ 
@@ -67,9 +54,9 @@ h1{
   font-variant: normal;
   text-transform: none;
   text-align: center;
-  border: 1px solid var(--win95-border); 
+  border: 1px outset var(--win95-border); 
   background: var(--win95-grey);
-  width: 150px;
+  width: inherit;
   padding: 4px;
   margin-top: 0px
   
@@ -81,42 +68,89 @@ h2{
 
 }
 
-.about{
-  border-left: 3px solid var(--win95-grey); 
-  padding: 4px;
-}
+
 
 a {
     text-decoration: none;
 }
+p {
+  background-color: var(--win95-grey);
+  border: 3px outset var(--win95-border);
+}
+h3 {
+  background-color: var(--win95-grey);
+  border: 3px outset var(--win95-border);
+}
+h2 {
+  background-color: var(--win95-grey);
+  border: 3px outset var(--win95-border);
+}
 
+.bkg{
+
+  background:var(--win95-green); ;
+
+  z-index: 100;
+  position: fixed;
+  bottom: 5%;
+  top: 5%;
+  right: 5%;
+  left: 5%;
+  border: 5px solid var(--dark-purple);
+}
+/*Centering the site */
+.title {
+  width: 80%; 
+  margin: auto;
+  margin-top: 24px; 
+
+}    
+
+/*Centering the title */
+.content {
+  width: 80%; 
+  margin: auto; 
+  
+}
+.about{
+  padding: 4px;
+}
+
+.clock {
+  
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+}
+clockbody{
+  width: 1000px;
+  height: fit-content;
+  background-color: var(--win95-grey);
+  border: 3px solid var(--win95-border);
+}
 /*CUSTOM BUTTONS*/
-
-/*Buttons*/
 
 /*Buttons without a description*/
 StBtn {
   
   display: flex;
-
   position: relative;
   justify-content: center;
   align-items: center;
-
   width: fit-content;
   background-color: var(--win95-grey);
   padding: 16px; 
   font-size: 24px; 
-
   min-width: 24px;
   min-height: 24px;
   max-width: 24px;
   min-width: 24px;
-
-  cursor: pointer; 
-  border-radius: 12%;
+  cursor: pointer;
   box-shadow: 0 9px var(--button-active);
-  border: 3px solid var(--win95-border);
+  border: 3px outset var(--win95-border);
   color: var(--vanilla);
 }
 StBtn:hover{
@@ -127,37 +161,29 @@ StBtn:active{
   background-color: var(--win95-green);
   box-shadow: 0 5px var(--button-active);
   transform: translateY(5px);
-  
 }
-
 /*Dynamic buttons*/
 
 btn {
-  
-  display: flex;
 
+  display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-
   width: fit-content;
   background-color: var(--win95-grey);
   padding: 16px; 
   font-size: 20px; 
-
   min-width: 24px;
   min-height: 24px;
   max-width: 24px;
   min-width: 24px;
-
   cursor: pointer; 
-  border-radius: 12%;
-  border: 3px solid var(--win95-border);
+  border: 3px outset var(--win95-border);
   color: var(--vanilla);
   transition: transform 0.3s ease, opacity 0.3s ease;
 
 }
-
 .icon{
   
   position: relative;
@@ -167,16 +193,19 @@ btn {
   color: var(--vanilla);
 
 }
+btn:hover{
+  background-color: var(--win95-blue);
 
+}
 btn:hover .icon{
   transform: translateY(15px);
   opacity: 0;
 }
 .BL-anchor{
   position: fixed;
-  bottom: 20px;
-  left: 10px;
-  z-index: 100;
+  top: 7%;
+  right: 6%;
+
   }
 
 /* Info Block Styling */
@@ -184,74 +213,65 @@ btn:hover .icon{
 
   position: relative;
   padding: 10px 20px;
-
   width: 50%;
   height: 24px;
-
   border-left: 1px solid var(--win95-border);
   justify-self: right;
   justify-items: right;
   display: block;
+  height: fit-content;
 
 }
 .infoTag {
 
   position: relative;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 10px;
   width: 50%;
-
-
-  border-right:1px solid var(--win95-border);
+  height: 24px;
   justify-self: left;
+  justify-items: left;
   display: block;
-    
+  height: fit-content;
 
 }
 .infoBlock {
-
   position: relative;
-  height: 48px;
-
+  height: fit-content;
   border-top: 1px solid var(--win95-border);
   justify-items: center;
   display: block;
+  
 }
 .container {
   display: flex;
   flex-direction: row; 
   flex-wrap: wrap;
   width: 100%;
-  max-width: 375px;
+  max-width: 186px;
   overflow-x:hidden;
   scrollbar-width: none;
   max-height: 200px;
-
 }
 .bar {
-
   background: url(/lib/img/InfoBar.png); 
   width: 375px;
   height: 20px;
   margin-top: 10px;
   border: 1px solid var(--win95-border);
-
 }
 .StartBar {
 
   background: url(/lib/img/Dynamicbar/Start.png); 
   width: 3px;
   height: 20px;
-  margin-top: 10px;
-
-
+  border-top: 0px solid var(--win95-border);
 }
 .BodyBar {
 
   background: url(/lib/img/Dynamicbar/Body.png); 
-  width: 20px;
+  width: calc(100% - 23px);
   height: 20px;
-  margin-top: 10px;
-
+  border-top: 0px solid var(--win95-border);
 }
 .EndBar {
 
@@ -259,23 +279,44 @@ btn:hover .icon{
   background: url(/lib/img/Dynamicbar/End.png); 
   width: 20px;
   height: 20px;
-  margin-top: 10px;
-  justify-self: right;
-  justify-items: right;
-  display: block;
+  border-top: 0px solid var(--win95-border);
 }
-
-
-
-
 
 
 .box {
   background-color: var(--win95-grey);
-  width: 375px;
-  border: 1px solid var(--win95-border);
+  width: 373px;
+  border: 1px outset var(--win95-border);
+  margin-top: 10px;
+  display: none;
 }
 
+
+taskbar {
+  position: fixed;
+  bottom: 5.6%;
+  left: 5.3%;
+  height: 30px;
+  width: 89.3%;
+  background-color: var(--win95-grey);
+  border-top: 3px  solid var(--win95-border);
+  z-index: 100;
+  
+}
+.win95logo {
+  height: 28px;
+  width: 30px;
+
+  border: 1px outset var(--win95-border);
+}
+
+.asciiart {
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  z-index: 100;
+  
+}
 /*
 TO DO 
 

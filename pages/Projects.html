@@ -11,15 +11,23 @@
 </head>
 <body>
 
+  <!--Background-->
+  <div class="bkg">
+  <!--Title-->
   <div class="title">
-    <h1>Projects</h1>
+    <div class="container">
+      <div class="StartBar"></div>
+      <div class="BodyBar">Title</div>
+      <div class="EndBar"></div>
+      <h1>Projects</h1>
+    </div>
   </div>
-  <div class="content"> 
- 
+  <img src="/lib/img/MIKUUUU.png" class="asciiart">
+
+  <div class="content">
     <!--Navigating buttons-->
-    
     <p class="container">
-      
+        
       <a href="projects/rong.html">
         <btn title="Rong" tag="Game" desc="What if pong was a rouge-like ? ">
           <span class="icon"><i class="fa fa-gamepad"></i><br></span>
@@ -33,22 +41,34 @@
         <span class="icon"><i class="fa fa-home"></i></span>
       </StBtn>
     </a>
-  
-    <!--Buttons info-->
-    <div class="bar" id="infoBar">Informations</div>
-    <div class="context box" id="infoBox">
+    <div class="container">
+      <!--Buttons info-->
+      <div class="box" id="infoBox">
+        <div class="container">
+          <div class="StartBar"></div>
+          <div class="BodyBar">Informations</div>
+          <div class="EndBar"></div>
+        </div>
       <div style="display: grid; grid-template-columns: auto auto; grid-gap: 0;">
-        <h3 class="infoTag" id="infoTag" style="margin: 0; ;"></h3>
+        <h3 class="infoTag" id="infoTag" style="margin: 0;"></h3>
         <h3 class="infoTitle" id="infoTitle" style="margin: 0;"></h3>
       </div>
       <p class="infoBlock" id="infoBlock" style="margin: 0;"></p>
+      </div>
     </div>
-
+    <!--Clock-->
+    <div class="clock container">
+      <div class="StartBar"></div>
+      <div class="BodyBar">Current time</div>
+      <div class="EndBar"></div>
+      <clockbody id="time"></clockbody>
+    </div>
+  
+    <taskbar>
+      <img src="/lib/img/win95 icon.png" class="win95logo">
+    </taskbar>
   
   </div>
-
-
-
 
 
 </body>
