@@ -13,7 +13,18 @@
 <body>
 
   <!--Title-->
+  
   <div class="title">
+    <div class="container">
+      <div class="StartBar"></div>
+      <div class="BodyBar"></div>
+      <style>
+        .BodyBar {
+            width:137px;
+        }
+    </style>
+      <div class="EndBar"></div>
+    </div>
     <h1>Portfolio</h1>
   </div>
   <div class="content"> 
@@ -22,31 +33,28 @@
   
     <div class="container">
       <a href="pages/AboutMe.html">
-        <btn data-title="About Me" data-tag="Info" data-info="Description and short recap of my studies">
+        <btn title="About Me" tag="Info" desc="Description and short recap of my studies">
           <span class="icon"><i class="fa fa-user"></i></span>
         </btn>
       </a>
 
       <a href="pages/Projects.html">
-        <btn data-title="Projects" data-tag="Info" data-info="My projects documentations.">
+        <btn title="Projects" tag="Info" desc="My projects documentations.">
           <span class="icon"><i class="fa fa-gear"></i></span>
         </btn>
       </a>
       
-      
     </div>
     
     <!--Buttons info-->
-    <div class="context">
+    <div class="bar" id="infoBar">Informations</div>
+    <div class="context box" id="infoBox">
       <div style="display: grid; grid-template-columns: auto auto; grid-gap: 0;">
-        <h3 class="infoTag" id="infoTag" style="margin: 0; ;"></h3>
+        <h3 class="infoTag" id="infoTag" style="margin: 0;"></h3>
         <h3 class="infoTitle" id="infoTitle" style="margin: 0;"></h3>
       </div>
       <p class="infoBlock" id="infoBlock" style="margin: 0;"></p>
     </div>
-    
-    
-  </div>
 
   <!--Social buttons-->
   <div class="BL-anchor" style="display: grid; grid-template-columns: auto auto; grid-gap: 0;"> <!--Anchors the buttons to the bottom left corner-->

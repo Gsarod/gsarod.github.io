@@ -18,6 +18,17 @@
 --button-active: rgb(43, 41, 41); 
 
 --text: rgba(135, 140, 143);
+
+--win95-red: rgba(227,95,95, 1);
+--win95-blue: rgba(57,77,205, 1);
+--win95-yellow: rgba(223,227,0, 1);
+--win95-green: rgba(32,140,113, 1);
+--win95-grey: rgba(108,108,108, 1);
+--win95-border: rgba(165, 165, 165, 1);
+--black: rgba(0, 0, 0 , 1);
+--white: rgba(255, 255, 255, 1);
+
+font-family: 'Trebuchet MS', sans-serif;
 }
 
 
@@ -25,6 +36,7 @@
 .title {
     width: 50%; 
     margin: auto; 
+
  }    
 
  /*Centering the title */
@@ -37,7 +49,7 @@
 /*Modifying the default tags*/
 body{
   background-color:var(--eerie-black);  
-  font-family: Verdana, Geneva, sans-serif;
+
   color: var(--vanilla);
   font-weight: 4000;
 
@@ -55,21 +67,22 @@ h1{
   font-variant: normal;
   text-transform: none;
   text-align: center;
-  border: 5px solid var(--yale-blue); 
-  background: var(--yale-blueBC);
-  width: fit-content;
+  border: 1px solid var(--win95-border); 
+  background: var(--win95-grey);
+  width: 150px;
   padding: 4px;
+  margin-top: 0px
   
 }
 
 h2{
-  text-decoration: underline solid var(--yale-blueBC);
+  text-decoration: underline solid var(--win95-grey);
   padding: 4px;
 
 }
 
 .about{
-  border-left: 3px solid var(--yale-blueBC); 
+  border-left: 3px solid var(--win95-grey); 
   padding: 4px;
 }
 
@@ -91,7 +104,7 @@ StBtn {
   align-items: center;
 
   width: fit-content;
-  background-color: var(--yale-blueBC);
+  background-color: var(--win95-grey);
   padding: 16px; 
   font-size: 24px; 
 
@@ -103,15 +116,15 @@ StBtn {
   cursor: pointer; 
   border-radius: 12%;
   box-shadow: 0 9px var(--button-active);
-  border: 3px solid var(--yale-blueNeon);
+  border: 3px solid var(--win95-border);
   color: var(--vanilla);
 }
 StBtn:hover{
-  background-color: var(--yale-blue);
+  background-color: var(--win95-blue);
 
 }
 StBtn:active{
-  background-color: var(--yale-blue);
+  background-color: var(--win95-green);
   box-shadow: 0 5px var(--button-active);
   transform: translateY(5px);
   
@@ -128,7 +141,7 @@ btn {
   align-items: center;
 
   width: fit-content;
-  background-color: var(--yale-blueBC);
+  background-color: var(--win95-grey);
   padding: 16px; 
   font-size: 20px; 
 
@@ -139,8 +152,7 @@ btn {
 
   cursor: pointer; 
   border-radius: 12%;
-  box-shadow: 0 9px var(--button-active);
-  border: 3px solid var(--yale-blueNeon);
+  border: 3px solid var(--win95-border);
   color: var(--vanilla);
   transition: transform 0.3s ease, opacity 0.3s ease;
 
@@ -172,12 +184,11 @@ btn:hover .icon{
 
   position: relative;
   padding: 10px 20px;
-  border: 2px inset var(--yale-blueBC);
+
   width: 50%;
   height: 24px;
-  background: var(--yale-blueBC);
-  border: solid var(--yale-blueNeon);
-  border-radius: 5px;
+
+  border-left: 1px solid var(--win95-border);
   justify-self: right;
   justify-items: right;
   display: block;
@@ -187,12 +198,10 @@ btn:hover .icon{
 
   position: relative;
   padding: 10px 20px;
-  border: 2px inset var(--yale-blueBC);
   width: 50%;
 
-  background: var(--yale-blueBC);
-  border: solid var(--yale-blueNeon);
-  border-radius: 5px;
+
+  border-right:1px solid var(--win95-border);
   justify-self: left;
   display: block;
     
@@ -201,12 +210,9 @@ btn:hover .icon{
 .infoBlock {
 
   position: relative;
-  padding: 10px 20px;
-  border-radius: 5px;
-  width:inherit;
   height: 48px;
-  background: var(--yale-blueBC);
-  border: solid var(--yale-blueNeon);
+
+  border-top: 1px solid var(--win95-border);
   justify-items: center;
   display: block;
 }
@@ -221,9 +227,53 @@ btn:hover .icon{
   max-height: 200px;
 
 }
+.bar {
 
-.context {
+  background: url(/lib/img/InfoBar.png); 
+  width: 375px;
+  height: 20px;
   margin-top: 10px;
+  border: 1px solid var(--win95-border);
+
+}
+.StartBar {
+
+  background: url(/lib/img/Dynamicbar/Start.png); 
+  width: 3px;
+  height: 20px;
+  margin-top: 10px;
+
+
+}
+.BodyBar {
+
+  background: url(/lib/img/Dynamicbar/Body.png); 
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+
+}
+.EndBar {
+
+  position:sticky;
+  background: url(/lib/img/Dynamicbar/End.png); 
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  justify-self: right;
+  justify-items: right;
+  display: block;
+}
+
+
+
+
+
+
+.box {
+  background-color: var(--win95-grey);
+  width: 375px;
+  border: 1px solid var(--win95-border);
 }
 
 /*
@@ -234,3 +284,4 @@ TO DO
 
 
 */
+
