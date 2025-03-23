@@ -16,6 +16,10 @@
   <!--Background-->
   <div class="bkg">
   <!--Title-->
+  <taskbar>
+    <img src="/lib/img/win95 icon.png" class="win95logo">
+  </taskbar>
+  <!--Title bar-->
   <div class="title">
     <div class="container">
       <div class="StartBar"></div>
@@ -28,81 +32,81 @@
 
   
 
-  <div class="content">  
+    <div class="content">  
+    
     <h3 class="about">Heyy uhhh, so appareantly I need to have a portfolio.... 
       so feel free to have a look around</h3>
+    
+    <!--About me-->
     <p class="about">
       I really want you to think that I know what I'm doing, but really I'm still figuring everything out 
       omg it's gonna be a loong journey.  
     </p>
-    
 
-    <!--Navigating buttons-->
-      <div class="container">
-        <div class="StartBar"></div>
-          <div class="BodyBar">Where are we going ?</div>
+    <!--Navigation bar -->
+    <div class="nav" id="nav"> 
+        <!--Navigating buttons-->
+        <div class="container">
+          <div class="StartBar"></div>
+            <div class="BodyBar">Where are we going ?</div>
+            <div class="EndBar"></div>
+          <a href="pages/AboutMe.html">
+            <btn title="About Me"  desc="Description and short recap of my studies">
+              <span class="icon"><i class="fa fa-user"></i></span>
+            </btn>
+          </a>
+          <a href="pages/Projects.html">
+            <btn title="Projects"  desc="My projects documentations.">
+              <span class="icon"><i class="fa fa-gear"></i></span>
+            </btn>
+          </a>
+          <a>
+            <btn title="TBD" tag="Info" desc="Empty button">?
+            </btn>
+          </a>
+          <a>
+            <btn title="TBD" tag="Info" desc="Empty button">?
+            </btn>
+          </a>
+          <a>
+            <btn title="TBD" tag="Info" desc="Empty button">?
+            </btn>
+          </a>
+          <a>
+            <btn title="TBD" tag="Info" desc="Empty button">?
+            </btn>
+          </a>
+        </div>
+    </div>
+
+      <!--Navigation info-->
+    <div class="container">
+      <div class="box" id="infoBox">
+        <div class="container">
+          <div class="StartBar"></div>
+          <div class="BodyBar" id="infoTitle"></div>
           <div class="EndBar"></div>
-        <a href="pages/AboutMe.html">
-          <btn title="About Me" tag="Info" desc="Description and short recap of my studies">
-            <span class="icon"><i class="fa fa-user"></i></span>
-          </btn>
-        </a>
-        <a href="pages/Projects.html">
-          <btn title="Projects" tag="Info" desc="My projects documentations.">
-            <span class="icon"><i class="fa fa-gear"></i></span>
-          </btn>
-        </a>
-        <a>
-          <btn title="Come back later" tag="Info" desc="Empty button">?
-          </btn>
-        </a>
-        <a>
-          <btn title="Come back later" tag="Info" desc="Empty button">?
-          </btn>
-        </a>
-        <a>
-          <btn title="Come back later" tag="Info" desc="Empty button">?
-          </btn>
-        </a>
-        <a>
-          <btn title="Come back later" tag="Info" desc="Empty button">?
-          </btn>
-        </a>
-      
-      </div>
-    
- 
+        </div>
+      <p class="infoBlock" id="infoBlock" style="margin: 0;"></p>
+      </div> 
+    </div>
+
       <!--Clock-->
-      <div class="clock container">
+    <div class="clock container">
           <div class="StartBar"></div>
           <div class="BodyBar">Current time</div>
           <div class="EndBar"></div>
           <clockbody id="time"></clockbody>
-      </div>
-    
-
-    
-    <div class="container">
-      <!--Buttons info-->
-      <div class="box" id="infoBox">
-        <div class="container">
-          <div class="StartBar"></div>
-          <div class="BodyBar">Informations</div>
-          <div class="EndBar"></div>
-        </div>
-      <div style="display: grid; grid-template-columns: auto auto; grid-gap: 0;">
-        <h3 class="infoTag" id="infoTag" style="margin: 0;"></h3>
-        <h3 class="infoTitle" id="infoTitle" style="margin: 0;"></h3>
-      </div>
-      <p class="infoBlock" id="infoBlock" style="margin: 0;"></p>
-      </div> 
     </div>
     
-  </div>
-  
-  <!--Social buttons-->
-  <div class="BL-anchor" style="display: grid; grid-template-columns: auto auto; grid-gap: 0;"> <!--Anchors the buttons to the bottom left corner-->
-      <a href="https://www.linkedin.com/in/gabriel-ungurasu-a05600291" >
+    <!--ASCII art-->
+    <div>
+        <img src="/lib/img/MIKUUUU.png" class="asciiart">
+    </div> 
+      
+    <!--Social buttons-->
+    <div class="BR-anchor" style="display: grid; grid-template-columns: auto auto; grid-gap: 0;"> <!--Anchors the buttons to the bottom left corner-->
+      <a href="https://www.linkedin.com/in/dragos-gabriel-ungurasu-a05600291/" >
         <StBtn>
           <i class="fa fa-linkedin"></i></button>
       </a>
@@ -112,14 +116,20 @@
         </StBtn>
       </a>
 
-  <taskbar>
-    <img src="/lib/img/win95 icon.png" class="win95logo">
-  </taskbar>
+  
+  
    
-</div>
-<div>
-  <img src="/lib/img/MIKUUUU.png" class="asciiart">
-</div>  
+    </div>   
+    
+    <!--Pong-->
+    <div>
+
+    </div>
+    </div>
+  </div>
+  
+    
+ 
 </body>
 </html>
 

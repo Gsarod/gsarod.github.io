@@ -76,14 +76,17 @@ a {
 p {
   background-color: var(--win95-grey);
   border: 3px outset var(--win95-border);
+  width: fit-content;
 }
 h3 {
   background-color: var(--win95-grey);
   border: 3px outset var(--win95-border);
+  width: fit-content;
 }
 h2 {
   background-color: var(--win95-grey);
   border: 3px outset var(--win95-border);
+  width: fit-content;
 }
 
 .bkg{
@@ -100,7 +103,9 @@ h2 {
 }
 /*Centering the site */
 .title {
-  width: 80%; 
+  
+  position: relative;
+  left: 1%;  
   margin: auto;
   margin-top: 24px; 
 
@@ -108,19 +113,24 @@ h2 {
 
 /*Centering the title */
 .content {
-  width: 80%; 
+
+  position: relative;
+  left: 1%;  
   margin: auto; 
+  overflow: hidden;
+  padding-bottom: 10%;
   
 }
 .about{
   padding: 4px;
+  width: fit-content;
 }
 
 .clock {
   
   position: fixed;
-  bottom: 10%;
-  right: 10%;
+  top: 7%;
+  right: 6%;
   width: fit-content;
   height: fit-content;
   padding: 5px;
@@ -129,7 +139,7 @@ clockbody{
   width: 1000px;
   height: fit-content;
   background-color: var(--win95-grey);
-  border: 3px solid var(--win95-border);
+  border: 1px solid var(--win95-border);
 }
 /*CUSTOM BUTTONS*/
 
@@ -201,9 +211,9 @@ btn:hover .icon{
   transform: translateY(15px);
   opacity: 0;
 }
-.BL-anchor{
+.BR-anchor{
   position: fixed;
-  top: 7%;
+  bottom: 11%;
   right: 6%;
 
   }
@@ -211,22 +221,20 @@ btn:hover .icon{
 /* Info Block Styling */
 .infoTitle {
 
-  position: relative;
+  position: sticky;
   padding: 10px 20px;
-  width: 50%;
+
   height: 24px;
   border-left: 1px solid var(--win95-border);
-  justify-self: right;
-  justify-items: right;
+  justify-self: left;
+  justify-items: left;
   display: block;
   height: fit-content;
 
 }
 .infoTag {
-
-  position: relative;
+  position: sticky;
   padding: 10px 20px 10px 10px;
-  width: 50%;
   height: 24px;
   justify-self: left;
   justify-items: left;
@@ -247,7 +255,7 @@ btn:hover .icon{
   flex-direction: row; 
   flex-wrap: wrap;
   width: 100%;
-  max-width: 186px;
+  max-width: 373px;
   overflow-x:hidden;
   scrollbar-width: none;
   max-height: 200px;
@@ -269,7 +277,8 @@ btn:hover .icon{
 .BodyBar {
 
   background: url(/lib/img/Dynamicbar/Body.png); 
-  width: calc(100% - 23px);
+  width: inherit;
+  max-width: calc(100% - 23px);
   height: 20px;
   border-top: 0px solid var(--win95-border);
 }
@@ -284,11 +293,15 @@ btn:hover .icon{
 
 
 .box {
+  
+  position: fixed;
   background-color: var(--win95-grey);
-  width: 373px;
+  width: max-content;
   border: 1px outset var(--win95-border);
   margin-top: 10px;
   display: none;
+  top: 45%;
+  left: 38%;
 }
 
 
@@ -300,30 +313,47 @@ taskbar {
   width: 89.3%;
   background-color: var(--win95-grey);
   border-top: 3px  solid var(--win95-border);
-  z-index: 100;
   
 }
 .win95logo {
-  height: 28px;
-  width: 30px;
+  height: 24px;
+  width: auto;
 
-  border: 1px outset var(--win95-border);
+  border: 3px outset var(--win95-border);
 }
 
 .asciiart {
   position: fixed;
   top: 35%;
-  left: 5%;
+  left: 6%;
   z-index: -1;
   
   
 }
+.nav{
+  position: fixed;
+
+  left: 40%;
+  top: 60%;
+  width: fit-content;
+  
+}
+
 /*
 TO DO 
 
-  WIN99 TYPE BLOCKS / BUTTONS
-  ADD A CUSTOM BACKGROUND BECAUSE A FLAT COLOUR IS REALLY LAME TBH
-
+  MAKE PONG ON THE MAIN PAGE CUZ WHY NOT
 
 */
 
+.hitbox{
+
+  position: fixed;
+
+  top: 20%;
+  right: 20%;
+
+  width: 50Px;
+
+  border: 1px solid black;
+}

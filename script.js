@@ -1,25 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
     
     // Fetches the description parameters
-    const [buttons, infoBlock, infoTitle, infoTag, infoBox, StartBar, BodyBar, EndBar] = [
+    const [buttons, infoBlock, infoTitle, StartBar, BodyBar, EndBar] = [
         document.querySelectorAll('btn'),
-        ...['infoBlock', 'infoTitle', 'infoTag', 'infoBox', 'infoBar', 'BarStart', 'BarBody', 'BarEnd']
+        ...['infoBlock', 'infoTitle', 'infoBox', 'infoBar', 'BarStart', 'BarBody', 'BarEnd']
             .map(id => document.getElementById(id))
     ];
 
     buttons.forEach(button => {
         button.addEventListener('mouseover', () => {
             // Initializes the descriptions upon hovering on the button
-            [infoTitle, infoTag, infoBlock].forEach((el, idx) => el.textContent = button.getAttribute(['title', 'tag', 'desc'][idx]));
-            [infoTitle, infoTag, infoBlock, infoBox, StartBar, BodyBar, EndBar].forEach(el => el.style.display = 'block');
+            [infoTitle, infoBlock].forEach((el, idx) => el.textContent = button.getAttribute(['title','desc'][idx]));
+            [infoTitle, infoBlock, infoBox, StartBar, BodyBar, EndBar].forEach(el => el.style.display = 'block');
         });
 
         button.addEventListener('mouseleave', () => {
             // Hides all the description elements when the mouse leaves
-            [infoTitle, infoTag, infoBlock, infoBox, StartBar, BodyBar, EndBar].forEach(el => el.style.display = 'none');
+            [infoTitle, infoBlock, infoBox, StartBar, BodyBar, EndBar].forEach(el => el.style.display = 'none');
         });
     });
-    
     
     
     let time = document.getElementById('time');
